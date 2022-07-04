@@ -6,19 +6,20 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import java.time.Duration;
 
 public class ApplicationManager {
-
     WebDriver wd;
 
-    UserHelper user;
-
+    UserHepler user;
+    BoardHelper board;
 
     public void init() {
         wd = new ChromeDriver();
-        wd.navigate().to("https://trello.com/ru");
+        wd.navigate().to("https://trello.com/");
         wd.manage().window().maximize();
         wd.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-        user = new UserHelper(wd);
+        user = new UserHepler(wd);
+        board= new BoardHelper(wd);
+        user.login("pankotanya30@gmail.com","07itanon");
     }
 
     public void stop() {
@@ -26,7 +27,11 @@ public class ApplicationManager {
         wd.quit();
     }
 
-    public UserHelper getUser() {
+    public UserHepler getUser() {
         return user;
+    }
+
+    public BoardHelper getBoard() {
+        return board;
     }
 }
