@@ -14,13 +14,13 @@ public class BoardCreation extends TestBase {
         Board board = new Board().setTitle("testQa34");
         app.getBoard().initBoardCreationFromHeader();
         app.getBoard().fillboardCreationForm(board);
-        app.getBoard().scrollDownTheForm();
+        //app.getBoard().scrollDownTheForm();
         app.getBoard().pause(2000);
         app.getBoard().submitBoardCreation();
         app.getBoard().pause(2000);
         app.getBoard().returnToHomePage();
 
         int boardCountAfterCreation = app.getBoard().getBoardCount();
-        Assert.assertEquals(boardCountAfterCreation, boardCountBeforeCreation + 1);
+        Assert.assertEquals(boardCountAfterCreation, boardCountBeforeCreation+1);
     }
 }
