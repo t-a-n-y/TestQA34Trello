@@ -11,7 +11,7 @@ public class BoardCreation extends TestBase {
     public void boardCreation1() {
 
         int boardCountBeforeCreation = app.getBoard().getBoardCount();
-        Board board = new Board().setTitle("testQa34");
+        Board board = new Board().setTitle("testQA");
         app.getBoard().initBoardCreationFromHeader();
         app.getBoard().fillboardCreationForm(board);
         //app.getBoard().scrollDownTheForm();

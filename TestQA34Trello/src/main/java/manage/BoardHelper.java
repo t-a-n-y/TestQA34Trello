@@ -31,11 +31,11 @@ public class BoardHelper extends HelperBase{
    // }
 
     public void submitBoardCreation() {
-        click(By.cssSelector("[data-test-id='create-board-submit-button']"));
+        click(By.cssSelector("button[data-test-id='create-board-submit-button']"));
     }
 
     public void returnToHomePage() {
-        click(By.cssSelector(".m2N684FcksCyfT"));
+        click(By.cssSelector("div[data-loading='false']"));
     }
 
     public int getBoardCount() {
