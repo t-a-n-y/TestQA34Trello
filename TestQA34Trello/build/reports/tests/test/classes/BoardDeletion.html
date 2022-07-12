@@ -3,17 +3,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 <meta http-equiv="x-ua-compatible" content="IE=edge"/>
-<title>Test results - Class tests.BoardCreation</title>
+<title>Test results - Class BoardDeletion</title>
 <link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
 <link href="../css/style.css" rel="stylesheet" type="text/css"/>
 <script src="../js/report.js" type="text/javascript"></script>
 </head>
 <body>
 <div id="content">
-<h1>Class tests.BoardCreation</h1>
+<h1>Class BoardDeletion</h1>
 <div class="breadcrumbs">
 <a href="../index.html">all</a> &gt; 
-<a href="../packages/tests.html">tests</a> &gt; BoardCreation</div>
+<a href="../packages/default-package.html">default-package</a> &gt; BoardDeletion</div>
 <div id="summary">
 <table>
 <tr>
@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">2</div>
 <p>tests</p>
 </div>
 </td>
@@ -35,13 +35,13 @@
 </td>
 <td>
 <div class="infoBox" id="ignored">
-<div class="counter">0</div>
+<div class="counter">1</div>
 <p>ignored</p>
 </div>
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">40.630s</div>
+<div class="counter">13.357s</div>
 <p>duration</p>
 </div>
 </td>
@@ -70,18 +70,18 @@
 <div id="tab0" class="tab">
 <h2>Failed tests</h2>
 <div class="test">
-<a name="boardCreation1"></a>
-<h3 class="failures">boardCreation1</h3>
+<a name="setUp"></a>
+<h3 class="failures">setUp</h3>
 <span class="code">
-<pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;[data-test-id='create-board-title-input']&quot;}
-  (Session info: chrome=103.0.5060.66)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+<pre>org.openqa.selenium.WebDriverException: unknown error: unexpected command response
+  (Session info: chrome=103.0.5060.114)
 Build info: version: '4.2.2', revision: '683ccb65d6'
 System info: host: 'ALEXPC', ip: '192.168.1.108', os.name: 'Windows 8.1', os.arch: 'amd64', os.version: '6.3', java.version: '11.0.15.1'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c7f8e4d99e057c7694c036aac5ccec48, findElement {using=css selector, value=[data-test-id='create-board-title-input']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.66, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\alex\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:54412}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:54412/devtoo..., se:cdpVersion: 103.0.5060.66, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: c7f8e4d99e057c7694c036aac5ccec48
+Command: [4177e5f2b2f1361e251861a872d1ca48, clickElement {id=763a322d-298e-43d1-b530-6783326176a2}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.114, chrome: {chromedriverVersion: 103.0.5060.53 (a1711811edd7..., userDataDir: C:\Users\alex\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:58740}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:58740/devtoo..., se:cdpVersion: 103.0.5060.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (4177e5f2b2f1361e251861a872d1ca48)] -&gt; css selector: [href='/login']]
+Session ID: 4177e5f2b2f1361e251861a872d1ca48
 	at java.base@11.0.15.1/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base@11.0.15.1/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at java.base@11.0.15.1/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -93,32 +93,21 @@ Session ID: c7f8e4d99e057c7694c036aac5ccec48
 	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
 	at app//org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
 	at app//org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:588)
-	at app//org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at app//org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:406)
-	at app//org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:398)
+	at app//org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at app//org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
 	at app//manage.HelperBase.click(HelperBase.java:13)
-	at app//manage.HelperBase.type(HelperBase.java:17)
-	at app//manage.BoardHelper.fillboardCreationForm(BoardHelper.java:21)
-	at app//tests.BoardCreation.boardCreation1(BoardCreation.java:16)
+	at app//manage.UserHepler.login(UserHepler.java:38)
+	at app//manage.ApplicationManager.init(ApplicationManager.java:28)
+	at app//tests.TestBase.setUp(TestBase.java:20)
 	at java.base@11.0.15.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base@11.0.15.1/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base@11.0.15.1/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.base@11.0.15.1/java.lang.reflect.Method.invoke(Method.java:566)
 	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
-	at app//org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
-	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
-	at app//org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
-	at app//org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:962)
-	at app//org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
-	at app//org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
-	at app//org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.base@11.0.15.1/java.util.ArrayList.forEach(ArrayList.java:1541)
-	at app//org.testng.TestRunner.privateRun(TestRunner.java:806)
-	at app//org.testng.TestRunner.run(TestRunner.java:601)
-	at app//org.testng.SuiteRunner.runTest(SuiteRunner.java:433)
-	at app//org.testng.SuiteRunner.runSequentially(SuiteRunner.java:427)
-	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:387)
+	at app//org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+	at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+	at app//org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+	at app//org.testng.SuiteRunner.privateRun(SuiteRunner.java:372)
 	at app//org.testng.SuiteRunner.run(SuiteRunner.java:330)
 	at app//org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at app//org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -162,8 +151,13 @@ Session ID: c7f8e4d99e057c7694c036aac5ccec48
 </tr>
 </thead>
 <tr>
-<td class="failures">boardCreation1</td>
-<td class="failures">40.630s</td>
+<td class="skipped">boardDeletion1</td>
+<td class="skipped">-</td>
+<td class="skipped">ignored</td>
+</tr>
+<tr>
+<td class="failures">setUp</td>
+<td class="failures">13.357s</td>
 <td class="failures">failed</td>
 </tr>
 </table>
@@ -176,7 +170,7 @@ Session ID: c7f8e4d99e057c7694c036aac5ccec48
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 7.4</a> at Jul 5, 2022, 3:36:11 PM</p>
+<a href="http://www.gradle.org">Gradle 7.4</a> at Jul 12, 2022, 9:27:34 PM</p>
 </div>
 </div>
 </body>

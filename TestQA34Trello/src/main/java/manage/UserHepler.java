@@ -32,7 +32,7 @@ public class UserHepler extends HelperBase{
     }
 
     public boolean isLogged() {
-        return wd.findElements(By.cssSelector("[data-test-id = 'header-member-menu-button']")).size() > 0;
+        return wd.findElements(By.cssSelector("[data-test-id = 'header-member-menu-button']")).size()>0;
     }
     public void login(String email, String password){
         click(By.cssSelector("[href='/login']"));

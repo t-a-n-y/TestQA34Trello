@@ -11,6 +11,10 @@ public class ApplicationManager {
     UserHepler user;
     BoardHelper board;
 
+    ListHelper list;
+    CardHelper card;
+
+
     public void init() {
         wd = new ChromeDriver();
         wd.navigate().to("https://trello.com/");
@@ -19,6 +23,8 @@ public class ApplicationManager {
 
         user = new UserHepler(wd);
         board= new BoardHelper(wd);
+        list = new ListHelper(wd);
+        card = new CardHelper(wd);
         user.login("pankotanya30@gmail.com","07itanon");
     }
 
@@ -33,5 +39,13 @@ public class ApplicationManager {
 
     public BoardHelper getBoard() {
         return board;
+    }
+
+    public ListHelper getList() {
+        return list;
+    }
+
+    public CardHelper getCard() {
+        return card;
     }
 }

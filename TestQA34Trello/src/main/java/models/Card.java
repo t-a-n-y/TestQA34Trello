@@ -5,16 +5,12 @@ import lombok.Getter;
 import lombok.Setter;
 import lombok.ToString;
 
-@Setter
 @Getter
-@ToString
+@Setter
 @Builder
+@ToString
 
-
-
-public class User {
-    private String email;
-    private String password;
-
-
+public class Card {
+    String cardName;
+    String color;
 }
