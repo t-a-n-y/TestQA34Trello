@@ -7,7 +7,6 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class Login extends TestBase {
-
     @BeforeMethod
     public void preConditions(){
         if(app.getUser().isLogged()){
@@ -18,13 +17,18 @@ public class Login extends TestBase {
 
     @Test
     public  void loginPositive() throws InterruptedException {
-        User user =  User.builder().email("pankotanya30@gmail.com").password("07itanon").build();
+        User user = User.builder().email("pankotanya30@gmail.com").password("07itanon").build();
+        logger.info("Test Login Positive 1"+ user.getEmail()+ " "+ user.getPassword());
+
         app.getUser().initLogin();
+        app.getUser().pause(2000);
         app.getUser().fillInLoginForm(user);
         app.getUser().submitLogin();
+        logger.info(" Logged---");
 
         Assert.assertTrue(app.getUser().isLogged());
     }
+
 
 
 }

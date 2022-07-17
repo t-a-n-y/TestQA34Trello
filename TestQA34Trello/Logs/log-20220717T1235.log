@@ -1,0 +1,4 @@
+12:35:08.173  INFO  manage.ApplicationManager - Test starts -----
+12:35:40.179  INFO  tests.TestBase - Start test----loginPositive
+12:35:56.519  INFO  tests.TestBase - Test login Positive 1pankotanya30@gmail.com 07itanon
+12:36:06.564  INFO  tests.TestBase - **************************************************

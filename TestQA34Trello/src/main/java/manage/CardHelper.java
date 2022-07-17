@@ -10,9 +10,7 @@ public class CardHelper extends HelperBase{
     }
 
     public void initCardCreation() {
-
         click(By.cssSelector(".js-add-a-card"));
-
     }
 
     public void fillCreationForm(Card card) {
@@ -30,6 +28,7 @@ public class CardHelper extends HelperBase{
 
     public void openCardMenu() {
         click(By.cssSelector(".js-cc-menu"));
+
     }
 
     public void submitCardCreation() {

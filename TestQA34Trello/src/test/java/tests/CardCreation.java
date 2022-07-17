@@ -4,7 +4,6 @@ import models.Card;
 import org.testng.annotations.Test;
 
 public class CardCreation extends TestBase{
-
     @Test
     public void cardCreation(){
         Card card = Card.builder().cardName("test1").color("green").build();
@@ -15,5 +14,8 @@ public class CardCreation extends TestBase{
         app.getCard().submitCardCreation();
 
 
+
+
     }
+
 }

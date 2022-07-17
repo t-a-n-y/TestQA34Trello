@@ -23,7 +23,6 @@ public class BoardHelper extends HelperBase{
 
     public void scrollDownTheForm() {
         Actions action= new Actions(wd);
-
         WebElement container = wd.findElement(By.cssSelector("[data-test-id='header-create-menu-popover']"));
         Rectangle rect = container.getRect();
         int x = rect.getX()+20;
@@ -32,11 +31,11 @@ public class BoardHelper extends HelperBase{
     }
 
     public void submitBoardCreation() {
-        click(By.cssSelector("button[data-test-id='create-board-submit-button']"));
+        click(By.cssSelector("[data-test-id='create-board-submit-button']"));
     }
 
     public void returnToHomePage() {
-        click(By.cssSelector("div[data-loading='false']"));
+        click(By.cssSelector(".m2N684FcksCyfT"));
     }
 
     public int getBoardCount() {
@@ -58,6 +57,7 @@ public class BoardHelper extends HelperBase{
 
     public void openSideBoardMenu() {
         click(By.cssSelector(".js-show-sidebar"));
+
     }
 
     public void openMore() {
@@ -67,7 +67,7 @@ public class BoardHelper extends HelperBase{
     public void deleteBoard() {
         click(By.cssSelector(".js-close-board"));
         click(By.cssSelector(".js-confirm"));
-        click(By.cssSelector("[data-test-id='close-board-delete-board-button']"));
-        click(By.cssSelector("[data-test-id='close-board-delete-board-confirm-button']"));
+        click(By.cssSelector("[data-test-id= 'close-board-delete-board-button']"));
+        click(By.cssSelector("[data-test-id= 'close-board-delete-board-confirm-button']"));
     }
 }

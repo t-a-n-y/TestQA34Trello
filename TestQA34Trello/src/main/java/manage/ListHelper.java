@@ -10,7 +10,7 @@ public class ListHelper extends HelperBase{
 
     public void createList(String listName) {
         click(By.cssSelector(".js-add-list"));
-        type(By.cssSelector(".list-name-input"),listName);
+        type(By.cssSelector(".list-name-input"), listName);
         click(By.cssSelector(".js-save-edit"));
 
 
